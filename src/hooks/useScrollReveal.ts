@@ -1,0 +1,32 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
+/**
+ * Returns `true` once the element enters the viewport.
+ * Uses IntersectionObserver — works on all browsers including mobile.
+ */
+export function useScrollReveal(threshold = 0.15) {
+  const ref = useRef<HTMLElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, visible };
+}

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* ─── Design Tokens ─── */
+:root {
+  --bg-deep:      #000000;
+  --bg-section:   #0a0a0a;
+  --text-primary: #ffffff;
+  --text-sec:     rgba(255,255,255,0.70);
+  --text-muted:   rgba(255,255,255,0.50);
+  --text-faint:   rgba(255,255,255,0.30);
+  --card-bg:      rgba(255,255,255,0.05);
+  --card-border:  rgba(255,255,255,0.10);
+  --card-hover:   rgba(255,255,255,0.09);
+}
+
+html.light {
+  --bg-deep:      #ffffff;
+  --bg-section:   #f4f4f5;
+  --text-primary: #111111;
+  --text-sec:     rgba(0,0,0,0.65);
+  --text-muted:   rgba(0,0,0,0.45);
+  --text-faint:   rgba(0,0,0,0.28);
+  --card-bg:      rgba(0,0,0,0.04);
+  --card-border:  rgba(0,0,0,0.10);
+  --card-hover:   rgba(0,0,0,0.07);
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-inter, Arial, sans-serif);
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Scroll Reveal ─── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+[data-reveal].visible {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal][data-delay="1"] { transition-delay: 0.10s; }
+[data-reveal][data-delay="2"] { transition-delay: 0.20s; }
+[data-reveal][data-delay="3"] { transition-delay: 0.30s; }
