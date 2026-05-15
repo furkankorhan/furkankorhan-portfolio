@@ -8,9 +8,9 @@ export function Kurzprofil() {
         <p style={{ color: "var(--text-sec)", fontSize: "clamp(1rem,2vw,1.25rem)", lineHeight: 1.8 }}>
           Furkan Korhan lebt in{" "}
           <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Hildesheim</span>{" "}
-          und bereitet sich auf den Einstieg in die Informatik vor. Sein Fokus liegt auf IT-Systemen, Netzwerken, Fehleranalyse und den Grundlagen der Webentwicklung. Er dokumentiert seinen Lernweg mit kleinen Projekten, GitHub-Repositories und praktischen Notizen. Ziel ist eine{" "}
+          und arbeitet an einem klaren Einstieg in die Informatik. Sein Fokus liegt auf IT-Systemen, Netzwerken, Fehleranalyse und den Grundlagen der Webentwicklung. Er verbindet praktische Computererfahrung mit kleinen Projekten, GitHub-Repositories und technischen Notizen. Ziel ist eine{" "}
           <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>IT-Ausbildung</span>,{" "}
-          in der er seine technische Neugier in klare berufliche Praxis verwandeln kann.
+          in der er vorhandene Neugier, Problemlösung und Lernbereitschaft in klare berufliche Praxis weiterentwickeln kann.
         </p>
       </div>
     </section>

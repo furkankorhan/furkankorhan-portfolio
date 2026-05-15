@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Furkan Korhan Portfolio
 
-## Getting Started
+Personal portfolio site for [furkankorhan.com](https://furkankorhan.com).
 
-First, run the development server:
+This project is not only a visual landing page. It is a small proof of how I work: I can plan a simple interface, build it with modern web tools, deploy it, connect a custom domain, and document the decisions behind it.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## What This Shows
+
+- A responsive one-page portfolio built with Next.js and TypeScript
+- A custom animated intro using a frame sequence
+- Clean sections for profile, focus areas, projects, and contact
+- Deployment on Vercel with a custom domain
+- Practical attention to design, layout, performance, and maintainability
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vercel
+
+## Project Structure
+
+```txt
+src/app/              App Router pages, metadata, sitemap, OG image
+src/components/       Portfolio sections and UI components
+src/hooks/            Small interaction hooks
+src/lib/              Animation frame metadata
+public/sequence/      WebP frame sequence for the hero animation
+public/robots.txt     Search engine crawling rules
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Main Sections
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `ScrollyCanvas`: animated visual intro
+- `Kurzprofil`: short personal profile
+- `Fokus`: current technical focus areas
+- `Projects`: selected project directions
+- `WarumInformatik`: why I work toward Informatik
+- `Contact`: portfolio, GitHub, and email links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Design Decisions
 
-## Learn More
+- The first screen should create a strong visual signal without becoming a marketing page.
+- The language is German because the site supports applications in Germany.
+- The project list is intentionally small. Each listed topic should become a real GitHub proof, not just a buzzword.
+- The site avoids claiming expert status. It shows direction, taste, and practical execution.
 
-To learn more about Next.js, take a look at the following resources:
+## Local Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Quality Checks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Current Status
+
+Live and usable. Next improvements:
+
+- Add finished GitHub project links as soon as the first proof projects are ready
+- Add a downloadable Lebenslauf link when the public CV version is finalized
+- Keep the project cards aligned with real work instead of listing too many unfinished ideas

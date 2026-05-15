@@ -15,7 +15,7 @@ export function Projects() {
       <div style={{ maxWidth: "72rem", margin: "0 auto" }}>
         <div data-reveal>
           <h2 id="projekte-heading" style={{ color: "var(--text-primary)", fontSize: "clamp(1.75rem,4vw,3rem)", fontWeight: 700, letterSpacing: "-0.02em", marginBottom: "0.75rem" }}>Ausgewählte Projekte</h2>
-          <p style={{ color: "var(--text-muted)", fontSize: "clamp(0.9rem,1.5vw,1.1rem)", marginBottom: "3.5rem", maxWidth: "32rem" }}>Kleine Projekte, die meinen Lernweg dokumentieren.</p>
+          <p style={{ color: "var(--text-muted)", fontSize: "clamp(0.9rem,1.5vw,1.1rem)", marginBottom: "3.5rem", maxWidth: "34rem" }}>Kleine Projekte, die technische Grundlagen sichtbar machen: verstehen, testen, dokumentieren.</p>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "1.5rem" }}>
           {PROJECTS.map((proj, i) => (
