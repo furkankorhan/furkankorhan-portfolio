@@ -2,8 +2,8 @@
 import { Clock } from "lucide-react";
 
 const PROJECTS = [
-  { title: "Home Network Troubleshooting Checklist", description: "Eine praktische Checkliste für typische Netzwerkprobleme: IP, DNS, DHCP, Gateway, Ping und einfache Tests.", tags: ["Netzwerke", "Troubleshooting", "Dokumentation"] },
-  { title: "Application Tracker", description: "Ein kleines Webtool, um Bewerbungen, Status und nächste Schritte übersichtlich zu verfolgen.", tags: ["HTML", "CSS", "JavaScript"] },
+  { title: "IT Troubleshooting Playbook", description: "Ein praktisches Playbook für Netzwerkprobleme: IP, DNS, DHCP, Gateway, Ping und einfache Terminal-Tests.", tags: ["Netzwerke", "Troubleshooting", "Dokumentation"] },
+  { title: "Application Tracker", description: "Ein kleines Webtool, um Bewerbungen, Status, Links und nächste Schritte übersichtlich zu verfolgen.", tags: ["HTML", "CSS", "JavaScript"] },
   { title: "Terminal & Linux Notes", description: "Notizen zu grundlegenden Terminal-Befehlen, Linux/macOS-Workflows und kleinen technischen Übungen.", tags: ["Linux", "Terminal", "GitHub"] },
   { title: "Basic Programming Exercises", description: "Kleine Übungen zu Variablen, Bedingungen, Schleifen, Funktionen und einfachem Debugging.", tags: ["Python", "JavaScript", "Grundlagen"] },
 ];
