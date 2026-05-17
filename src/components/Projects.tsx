@@ -5,9 +5,10 @@ const PROJECTS = [
   {
     title: "Application Tracker",
     description: "Ein kleines Webtool, um Bewerbungen, Status, Links und nächste Schritte übersichtlich zu verfolgen.",
-    status: "Web Tool",
+    status: "Live Demo",
     tags: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/furkankorhan/application-tracker",
+    demo: "https://furkankorhan.com/application-tracker",
   },
   {
     title: "Task Tracker CLI",
