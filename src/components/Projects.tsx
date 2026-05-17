@@ -18,6 +18,14 @@ const PROJECTS = [
     repo: "https://github.com/furkankorhan/task-tracker-cli",
   },
   {
+    title: "Weather Dashboard",
+    description: "Ein kleines API-Dashboard mit Ortssuche, Fetch-Logik, Fehlerzustand und Wetterdaten von Open-Meteo.",
+    status: "Live Demo",
+    tags: ["API", "JavaScript", "Open-Meteo"],
+    repo: "https://github.com/furkankorhan/furkankorhan-portfolio",
+    demo: "https://furkankorhan.com/weather-dashboard",
+  },
+  {
     title: "Password Generator",
     description: "Ein Browser-Tool für Passwortgenerierung mit DOM-Interaktion, Clipboard API und sichererem Zufall über Web Crypto.",
     status: "Live Demo",
