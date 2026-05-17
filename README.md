@@ -1,19 +1,16 @@
 # Furkan Korhan Portfolio
 
-![Portfolio weather dashboard preview](assets/weather-dashboard-preview.svg)
-
 Personal portfolio site for [furkankorhan.com](https://furkankorhan.com).
 
-This project is not only a visual landing page. It is a small proof of how I work: I can plan a simple interface, build it with modern web tools, deploy it, connect a custom domain, and document the decisions behind it.
+This repository contains the main portfolio website. It is the central place where the public site, selected project cards, contact links, metadata, sitemap and live demo routes are deployed from.
 
 ## What This Shows
 
-- A responsive one-page portfolio built with Next.js and TypeScript
+- A responsive portfolio built with Next.js and TypeScript
 - A custom animated intro using a frame sequence
-- Clean sections for profile, focus areas, projects, and contact
-- Live mini demos for application tracking and weather API data
+- Clean sections for profile, focus areas, selected projects and contact
 - Deployment on Vercel with a custom domain
-- Practical attention to design, layout, performance, and maintainability
+- Practical attention to design, layout, performance and maintainability
 
 ## Tech Stack
 
@@ -40,18 +37,16 @@ public/robots.txt     Search engine crawling rules
 - `ScrollyCanvas`: animated visual intro
 - `Kurzprofil`: short personal profile
 - `Fokus`: current technical focus areas
-- `Projects`: selected project directions
-- `/application-tracker`: small browser tool for application workflow tracking
-- `/weather-dashboard`: Open-Meteo API demo with city search and forecast data
+- `Projects`: selected project cards
 - `WarumInformatik`: why I work toward Informatik
-- `Contact`: portfolio, GitHub, and email links
+- `Contact`: portfolio, GitHub and email links
 
 ## Design Decisions
 
-- The first screen should create a strong visual signal without becoming a marketing page.
+- The first screen should create a strong visual signal without becoming a generic landing page.
 - The language is German because the site supports applications in Germany.
-- The project list is intentionally small. Each listed topic should become a real GitHub proof, not just a buzzword.
-- The site avoids claiming expert status. It shows direction, taste, and practical execution.
+- The project list is intentionally small and should point to real proof, not unfinished ideas.
+- The site avoids claiming expert status. It shows direction, taste and practical execution.
 
 ## Local Development
 
