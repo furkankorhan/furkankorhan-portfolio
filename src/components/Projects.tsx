@@ -22,7 +22,6 @@ const PROJECTS = [
     description: "Ein kleines API-Dashboard mit Ortssuche, Fetch-Logik, Fehlerzustand und Wetterdaten von Open-Meteo.",
     status: "Live Demo",
     tags: ["API", "JavaScript", "Open-Meteo"],
-    repo: "https://github.com/furkankorhan/furkankorhan-portfolio",
     demo: "https://furkankorhan.com/weather-dashboard",
   },
   {
@@ -94,10 +93,12 @@ export function Projects() {
                 ))}
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.55rem", marginTop: "1.35rem" }}>
-                <a href={proj.repo} target="_blank" rel="noopener noreferrer" style={linkStyle}>
-                  <Code2 style={{ width: 15, height: 15 }} />
-                  Code
-                </a>
+                {proj.repo ? (
+                  <a href={proj.repo} target="_blank" rel="noopener noreferrer" style={linkStyle}>
+                    <Code2 style={{ width: 15, height: 15 }} />
+                    Code
+                  </a>
+                ) : null}
                 {proj.demo ? (
                   <a href={proj.demo} target="_blank" rel="noopener noreferrer" style={linkStyle}>
                     <ExternalLink style={{ width: 15, height: 15 }} />
