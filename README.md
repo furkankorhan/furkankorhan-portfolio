@@ -1,5 +1,7 @@
 # Furkan Korhan Portfolio
 
+![Portfolio weather dashboard preview](assets/weather-dashboard-preview.svg)
+
 Personal portfolio site for [furkankorhan.com](https://furkankorhan.com).
 
 This project is not only a visual landing page. It is a small proof of how I work: I can plan a simple interface, build it with modern web tools, deploy it, connect a custom domain, and document the decisions behind it.
@@ -9,6 +11,7 @@ This project is not only a visual landing page. It is a small proof of how I wor
 - A responsive one-page portfolio built with Next.js and TypeScript
 - A custom animated intro using a frame sequence
 - Clean sections for profile, focus areas, projects, and contact
+- Live mini demos for application tracking and weather API data
 - Deployment on Vercel with a custom domain
 - Practical attention to design, layout, performance, and maintainability
 
@@ -38,6 +41,8 @@ public/robots.txt     Search engine crawling rules
 - `Kurzprofil`: short personal profile
 - `Fokus`: current technical focus areas
 - `Projects`: selected project directions
+- `/application-tracker`: small browser tool for application workflow tracking
+- `/weather-dashboard`: Open-Meteo API demo with city search and forecast data
 - `WarumInformatik`: why I work toward Informatik
 - `Contact`: portfolio, GitHub, and email links
 
@@ -68,6 +73,5 @@ npm run build
 
 Live and usable. Next improvements:
 
-- Add finished GitHub project links as soon as the first proof projects are ready
 - Add a downloadable Lebenslauf link when the public CV version is finalized
 - Keep the project cards aligned with real work instead of listing too many unfinished ideas
