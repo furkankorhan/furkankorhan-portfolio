@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Weather Dashboard preview">
+  <rect width="1200" height="675" rx="28" fill="#082f49"/>
+  <circle cx="945" cy="155" r="95" fill="#38bdf8" opacity="0.25"/>
+  <circle cx="1000" cy="120" r="52" fill="#facc15" opacity="0.9"/>
+  <text x="70" y="92" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Weather Dashboard</text>
+  <text x="72" y="130" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="21">Open-Meteo API, city search, current weather and 3-day forecast.</text>
+  <rect x="70" y="185" width="1060" height="390" rx="24" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.35"/>
+  <rect x="110" y="230" width="560" height="70" rx="14" fill="#111827" stroke="#334155"/>
+  <text x="140" y="275" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="24">Hildesheim, Deutschland</text>
+  <rect x="695" y="230" width="150" height="70" rx="14" fill="#38bdf8"/>
+  <text x="735" y="275" fill="#082f49" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Search</text>
+  <text x="120" y="410" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="88" font-weight="900">18°C</text>
+  <text x="125" y="455" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="24">Partly cloudy · feels like 17°C</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="530" y="365" width="165" height="95" rx="16" fill="#111827" stroke="#334155"/>
+    <text x="555" y="402" fill="#94a3b8" font-size="18">Humidity</text>
+    <text x="555" y="442" fill="#f8fafc" font-size="34" font-weight="800">62%</text>
+    <rect x="725" y="365" width="165" height="95" rx="16" fill="#111827" stroke="#334155"/>
+    <text x="750" y="402" fill="#94a3b8" font-size="18">Wind</text>
+    <text x="750" y="442" fill="#f8fafc" font-size="34" font-weight="800">13 km/h</text>
+    <rect x="920" y="365" width="165" height="95" rx="16" fill="#111827" stroke="#334155"/>
+    <text x="945" y="402" fill="#94a3b8" font-size="18">Rain</text>
+    <text x="945" y="442" fill="#f8fafc" font-size="34" font-weight="800">0 mm</text>
+  </g>
+</svg>
