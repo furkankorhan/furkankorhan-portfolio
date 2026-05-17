@@ -41,6 +41,13 @@ export function Contact() {
             <ExternalLink style={{ width: 18, height: 18 }} />
             github.com/furkankorhan
           </a>
+          <a href="https://www.linkedin.com/in/furkankorhan/" target="_blank" rel="noopener noreferrer" style={btnStyle}
+            onMouseEnter={e => (e.currentTarget.style.background = "var(--card-hover)")}
+            onMouseLeave={e => (e.currentTarget.style.background = "var(--card-bg)")}
+          >
+            <ExternalLink style={{ width: 18, height: 18 }} />
+            LinkedIn
+          </a>
           <span style={btnDisabledStyle} aria-label="Lebenslauf noch nicht verfügbar">
             <Download style={{ width: 18, height: 18 }} />
             Lebenslauf (bald)
@@ -64,6 +71,12 @@ export function Footer() {
             onMouseLeave={e => (e.currentTarget.style.color = "var(--text-faint)")}
           >
             GitHub ↗
+          </a>
+          <a href="https://www.linkedin.com/in/furkankorhan/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--text-faint)", fontSize: "0.85rem", textDecoration: "none", transition: "color 0.2s" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--text-faint)")}
+          >
+            LinkedIn ↗
           </a>
           <ThemeToggle />
         </div>
