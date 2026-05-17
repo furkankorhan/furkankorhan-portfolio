@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Furkan Korhan", url: "https://furkankorhan.com" }],
   creator: "Furkan Korhan",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
@@ -55,6 +58,29 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Furkan Korhan",
+  url: "https://furkankorhan.com",
+  sameAs: [
+    "https://github.com/furkankorhan",
+    "https://www.linkedin.com/in/furkankorhan/",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Hildesheim",
+    addressCountry: "DE",
+  },
+  knowsAbout: [
+    "Informatik",
+    "IT-Systeme",
+    "Webentwicklung",
+    "Fehleranalyse",
+    "GitHub",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -67,6 +93,10 @@ export default function RootLayout({
     >
       {/* Blocking script: runs BEFORE React hydration — prevents theme flash */}
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
