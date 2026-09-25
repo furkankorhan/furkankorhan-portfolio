@@ -12,7 +12,13 @@ export function Kurzprofil() {
           <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>IT-Ausbildung</span>,{" "}
           in der er vorhandene Neugier, Problemlösung und Lernbereitschaft in klare berufliche Praxis weiterentwickeln kann.
         </p>
+        <p style={{ color: "var(--text-sec)", fontSize: "clamp(1rem,2vw,1.25rem)", lineHeight: 1.8, marginTop: "1.5rem" }}>
+          <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Deutsch B1</span>{" "}
+          — Zertifikat Deutsch-Test für Zuwanderer (DTZ), erworben am{" "}
+          <time dateTime="2026-09-20">20.09.2026</time>.
+        </p>
       </div>
     </section>
   );
 }
+
