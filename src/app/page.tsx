@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Mail, FileText, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { ScrollyCanvas } from "@/components/ScrollyCanvas";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { DocumentRequest } from "./DocumentRequest";
 import styles from "./profile.module.css";
 
 const description = "Furkan Korhan aus Hildesheim: auf dem Weg in eine IT-Ausbildung in Systemintegration oder Anwendungsentwicklung. Deutsch B1 (DTZ), technische Interessen und Kontakt.";
@@ -12,7 +13,6 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Furkan Korhan | Mein Weg in die IT", description, images: ["/og-image"] },
 };
 
-const documentsHref = `mailto:mail@furkankorhan.com?subject=${encodeURIComponent("Anfrage zu Ihren Bewerbungsunterlagen")}&body=${encodeURIComponent("Hallo Furkan,\n\nwir interessieren uns für Ihr Profil. Bitte senden Sie uns Ihren Lebenslauf und Ihre relevanten Nachweise an diese E-Mail-Adresse.\n\nUnternehmen:\nAnsprechperson:\nAusbildungsstelle:\n\nVielen Dank!")}`;
 const learning = [
   { number: "01", title: "Systeme & Netzwerke", text: "Ich beschäftige mich mit Betriebssystemen, Linux und den Grundlagen von IP, DNS und DHCP. Mich interessiert, wie die einzelnen Teile eines IT-Systems zusammenarbeiten." },
   { number: "02", title: "Webentwicklung", text: "Mit HTML, CSS und JavaScript lerne ich, wie Webseiten aufgebaut sind. Kleine Webtools helfen mir dabei, Programmierlogik praktisch nachzuvollziehen." },
@@ -63,8 +63,7 @@ export default function Home() {
         <section className={styles.contact} id="kontakt" aria-labelledby="contact-heading">
           <div><p className={styles.eyebrow}>Kontakt & Unterlagen</p><h2 id="contact-heading">Passt mein Profil<br />zu Ihrer Ausbildung?</h2><p>Ich freue mich über ein persönliches Gespräch. Meinen Lebenslauf und relevante Nachweise sende ich Ihnen gerne auf Anfrage zu.</p></div>
           <div className={styles.contactActions}>
-            <a className={styles.primaryButton} href={documentsHref}><FileText size={18} aria-hidden="true" /><span>Unterlagen anfragen</span><ArrowUpRight size={18} aria-hidden="true" /></a>
-            <p className={styles.buttonHint}>Öffnet eine vorbereitete E-Mail. Ich antworte persönlich mit meinen Unterlagen.</p>
+            <DocumentRequest />
             <a className={styles.email} href="mailto:mail@furkankorhan.com"><Mail size={16} aria-hidden="true" /><span>mail@furkankorhan.com</span></a>
           </div>
         </section>

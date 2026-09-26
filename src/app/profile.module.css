@@ -82,3 +82,17 @@
   .footer { flex-wrap: wrap; gap: 12px; padding: 26px 0; }
 }
 @media (prefers-reduced-motion: reduce) { .primaryButton { transition: none; } }
+
+.requestForm { display: grid; gap: 15px; }
+.requestForm label { display: block; font-size: 12px; line-height: 1.6; margin-bottom: 6px; color: var(--text-primary); }
+.requestForm label span { color: var(--text-sec); font-size: 11px; }
+.requestForm input, .requestForm textarea { width: 100%; min-width: 0; border: 1px solid var(--card-border); border-radius: 8px; padding: 11px 12px; color: var(--text-primary); background: var(--bg-deep); font: inherit; font-size: 16px; line-height: 1.5; }
+.requestForm textarea { resize: vertical; min-height: 96px; }
+.requestForm input:focus-visible, .requestForm textarea:focus-visible, .requestForm button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.requestForm .primaryButton { width: 100%; border: 0; cursor: pointer; }
+.requestForm .primaryButton:disabled { opacity: .6; cursor: wait; }
+.contact .formPrivacy { font-size: 11px!important; line-height: 1.7!important; margin: 0!important; color: var(--text-sec); }
+.contact .formSuccess, .contact .formError { font-size: 13px!important; line-height: 1.7!important; margin: 0!important; border-left: 2px solid var(--accent); padding: 10px 12px; background: var(--card-bg); }
+.contact .formError { border-left-color: #c87e6e; }
+.formTrap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.requestForm + .email { margin-top: 14px; }
