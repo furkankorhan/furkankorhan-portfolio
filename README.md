@@ -1,1 +1,39 @@
-İşte senin için hazırladığım Hildesheim/Hannover Diş Tedavisi ve Bütçe Koruma Planı:📌 AŞAMA 1: TEMELİ ATMA (İşe Başladığın İlk Hafta)Ne Yapılacak?: Check24 veya WaizmannTabelle sitelerine gir. Concordia (ZAHN SORGLOS 100) poliçesini seç.Kritik Detay: Başvuru formundaki "Eksik dişiniz var mı?" sorusuna kesinlikle "2 Eksik Diş" (2 fehlende Zähne) olarak dürüstçe yanıt ver. Poliçenin "Ohne Wartezeit" (Bekleme süresiz) olduğundan emin ol.Maliyet: Ayda yaklaşık 35 € - 45 € prim ödeyeceksin.📌 AŞAMA 2: TEMİZLİK VE BAKIM (Sigorta Başladıktan 1 Ay Sonra)Ne Yapılacak?: Hildesheim’da (örneğin Zahnärzte am Dammtor veya Dr. Michaelis kliniğinden) yeni bir genel diş hekimi randevusu al.İşlemler: Tüm rutin dolgularını yaptır ve Professionelle Zahnreinigung (PZR) yani profesyonel temizlik iste.Maliyet: 0 € (Concordia bu dolgu ve temizlik masraflarını %100 karşılar).Amaç: Ağzı sonraki büyük tedaviler için tamamen mikropsuz ve sağlıklı hale getirmek.📌 AŞAMA 3: GÜLÜŞ TASARIMI & ORTODONTİ (Sigorta Başladıktan 8 Ay Sonra)Ne Yapılacak?: Hannover Merkez'deki DrSmile veya benzeri bir şeffaf plak merkezinden 3D tarama randevusu al.Kritik Detay: Merkezden aldığın tedavi ve maliyet planını (Heil- und Kostenplan) plakları taktırmadan önce Concordia sigortana mail atıp yazılı onay (Zusage) al.Taktik: İlk yıl sigorta limitini aşmamak için DrSmile ile konuşup faturayı aylık taksitlere bölerek iki farklı takvim yılına yaymalarını iste.Maliyet: 0 € (Sigorta limitleri dahilinde tamamen karşılanır).Sonuç: Gerideki dişin öne gelir, yamukluklar düzelir ve eksik diş yerleri implant için milimetrik olarak hazır olur.📌 AŞAMA 4: BÜYÜK FİNAL & İMPLANTLAR (Sigorta Başladıktan 1.5 Yıl Sonra)Ne Yapılacak?: Dişlerin tamamen düzeldikten sonra arkalarına Retainer (Sabit Koruyucu Tel) taktır ki dişlerin bir daha asla geri kaçmasın. Hemen ardından Hildesheim'daki klinikte önce üstteki, birkaç ay sonra da alttaki boşluğa implantlarını yaptır.Kritik Detay: Ameliyattan önce klinikten alacağın maliyet planını yine sigortana onaylat.Maliyet: Sigortada 2. yılına girdiğin için yıllık bütçe limitin çok yükselmiş olacak. Yaklaşık 5.000 € tutacak iki implantın devasa kısmını sigorta öder; sen klinikte elden toplamda sadece ~500 € - 1.000 € arası bir katkı payı ödersin.🚨 AKILDA TUTULMASI GEREKEN 3 ALTIN KURALSıralamayı Bozma: Önce sigorta, sonra temizlik/dolgu, sonra şeffaf plak ve en son implant. İmplant vidaları kemiğe çakıldıktan sonra dişler bir daha oynatılamaz!Sağlam Dişlerini Kestirme: Alttaki diş için köprü yaptırıp yanındaki iki sağlam gencecik dişi küçülttürme. Sabret, zamanı gelince oraya da doğrudan implant yaptır.Yeni Klinik Seç: Kafanın tamamen rahat olması için, sigorta başladıktan sonra Hildesheim'da daha önce dolgu için hiç gitmediğin yeni bir kliniğe git ki geçmiş kayıtlarla hiçbir çakışma riski olmasın.
+# Meine Website
+
+Unter [furkankorhan.com](https://furkankorhan.com) stelle ich mich und meinen Wunsch nach einer IT-Ausbildung vor. Die Seite richtet sich an Ausbildungsbetriebe für Systemintegration und Anwendungsentwicklung.
+
+Der Einstieg besteht aus einer Animation, die sich beim Scrollen verändert. Darunter stehen Informationen über mich, meine Lernfelder und ein Formular, über das Interessierte meine Bewerbungsunterlagen anfragen können.
+
+## Aufbau
+
+Die Website verwendet Next.js, React und TypeScript. Für das Layout kommen CSS und Tailwind CSS zum Einsatz. Sie wird über Vercel unter meiner eigenen Domain veröffentlicht.
+
+- `src/app/page.tsx` – Hauptseite und Profiltexte
+- `src/app/profile.module.css` – Gestaltung des Profil- und Kontaktbereichs
+- `src/app/DocumentRequest.tsx` – Formular für Unterlagenanfragen
+- `src/components/ScrollyCanvas.tsx` – animierter Einstieg
+- `public/sequence/` – Bilder der Animation
+
+Das Formular sendet Anfragen an einen separat auf Hostinger betriebenen PHP-Endpunkt. Dieser Dienst und seine Zugangsdaten sind nicht Bestandteil dieses Repositories. Ein lokaler Start der Website richtet daher keinen eigenen Mailversand ein. Lebenslauf und Zeugnisse werden nicht öffentlich im Repository abgelegt.
+
+## Lokal starten
+
+Voraussetzung: Node.js 20.9 oder neuer und npm.
+
+```bash
+npm ci
+npm run dev
+```
+
+Danach ist die Seite unter `http://localhost:3000` erreichbar.
+
+```bash
+npm run lint
+npm run build
+```
+
+Diese Befehle prüfen den Code und erstellen die Produktionsversion.
+
+## Hintergrund
+
+Die Website ist ein persönliches Projekt, das mit KI-Unterstützung entstanden ist. Mein Schwerpunkt liegt auf der Gestaltung, den Inhalten und der Nutzung als eigene Bewerbungsseite. Die verwendeten Webtechniken gehören zu den Themen, mit denen ich mich weiter beschäftige.
